@@ -8,22 +8,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <label for="Email">E-mail:</label>
-    <input type="email" name="Email" id="Email" />
-    <label for="country">Country:</label>
-    <select name="country" id="country">
-      <option value="Serbia">Serbia</option>
-      <option value="Macedonia">Macedonia</option>
-      <option value="Russia">Russia</option>
-      <option value="France">France</option>
-    </select>
-    <label for="zip">ZIP:</label>
-    <input type="text" name="zip" id="zip" />
-    <label for="pass">Password:</label>
-    <input type="password" name="pass" id="pass" />
-    <label for="confirmpass">Confirm password:</label>
-    <input type="password" name="confirmpass" id="confirmpass" />
-    <button type="submit">Submit</button>
+    <h1>Constraint API validation test</h1>
+    <form>
+      <label for="mail">E-mail:</label>
+      <input type="email" name="mail" id="mail" />
+      <span class="mail-error"></span>
+
+      <label for="country">Country:</label>
+      <select name="country" id="country">
+        <option value="Serbia">Serbia</option>
+        <option value="Macedonia">Macedonia</option>
+        <option value="Russia">Russia</option>
+        <option value="France">France</option>
+      </select>
+      <span class="country-error"></span>
+
+      <label for="zip">ZIP:</label>
+      <input type="text" name="zip" id="zip" />
+      <span class="zip-error"></span>
+
+      <label for="pass">Password:</label>
+      <input type="password" name="pass" id="pass" />
+      <span class="pass-error"></span>
+
+      <label for="confirmpass">Confirm password:</label>
+      <input type="password" name="confirmpass" id="confirmpass" />
+      <span class="confirm-error"></span>
+
+      <button>Submit</button>
+    </form>
 
     <script src="index.js"></script>
   </body>

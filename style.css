@@ -8,3 +8,15 @@ select {
   margin: 10px 0;
   display: block;
 }
+
+input:invalid {
+  background-color: rgb(231, 207, 207);
+  border: 2px solid rgb(160, 0, 0);
+  border-radius: 4px;
+}
+
+span {
+  display: block;
+  color: red;
+  height: 20px;
+}
